@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/locationFragment">
+
+    <!-- LocationFragment -->
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.lab4.LocationFragment"
+        android:label="Location Fragment"
+        tools:layout="@layout/fragment_location">
+
+        <!-- Acción para navegar a ForecastFragment -->
+        <action
+            android:id="@+id/action_locationFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+
+    <!-- ForecastFragment -->
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.example.lab4.PronosticoFragment"
+        android:label="Forecast Fragment"
+        tools:layout="@layout/fragment_forecast" />
+</navigation>

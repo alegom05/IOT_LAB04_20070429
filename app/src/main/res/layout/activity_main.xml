@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEWEATHER"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#00A86B"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/ivIcono"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icantena"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alejandro Gómez 20070429"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:backgroundTint="#00A86B"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" />
+</LinearLayout>
