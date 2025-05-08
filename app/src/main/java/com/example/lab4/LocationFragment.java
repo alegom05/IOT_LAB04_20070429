@@ -20,4 +20,7 @@ public class LocationFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_location, container, false);
     }
+
+
+
 }

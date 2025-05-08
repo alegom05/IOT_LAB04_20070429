@@ -4,8 +4,8 @@
     android:id="@+id/containerLocation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     android:padding="16dp">
 
     <!-- Título -->
@@ -13,12 +13,12 @@
         android:id="@+id/tvTituloLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:gravity="center"
-        android:text="Pronóstico del Futuro"
-        android:textColor="#000000"
+        android:text="Pronóstico de Clima"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
 
     <!-- Fila de búsqueda -->
     <LinearLayout
@@ -29,23 +29,23 @@
         <EditText
             android:id="@+id/etBuscar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#CCCCCC"
+            android:layout_height="wrap_content"
             android:hint="idLocación"
-            android:padding="8dp"
-            android:textColor="#000000" />
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#000000"
+            android:padding="8dp"/>
 
         <Button
             android:id="@+id/btnBuscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:backgroundTint="#009688"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
             android:text="Buscar"
-            android:textColor="#FFFFFF" />
+            android:backgroundTint="#009688"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
     </LinearLayout>
 
     <!-- RecyclerView de resultados -->
@@ -53,8 +53,8 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
         android:layout_weight="1"
+        android:layout_marginTop="16dp"
         android:clipToPadding="false"
         android:paddingBottom="8dp" />
 

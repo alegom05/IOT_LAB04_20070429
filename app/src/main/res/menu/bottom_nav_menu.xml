@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_location"
+        android:id="@+id/locationFragment"
         android:icon="@android:drawable/ic_menu_mylocation"
         android:title="Location" />
     <item
-        android:id="@+id/nav_weather"
+        android:id="@+id/pronosticoFragment"
         android:icon="@android:drawable/ic_menu_compass"
         android:title="Clima" />
     <item
-        android:id="@+id/nav_forecast"
+        android:id="@+id/futureFragment"
         android:icon="@android:drawable/ic_menu_today"
         android:title="Futuro" />
 </menu>

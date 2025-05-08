@@ -2,25 +2,24 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/locationFragment">
 
-    <!-- LocationFragment -->
     <fragment
         android:id="@+id/locationFragment"
         android:name="com.example.lab4.LocationFragment"
-        android:label="Location Fragment"
-        tools:layout="@layout/fragment_location">
+        android:label="Location"
+        tools:layout="@layout/fragment_location" />
 
-        <!-- Acción para navegar a ForecastFragment -->
-        <action
-            android:id="@+id/action_locationFragment_to_forecastFragment"
-            app:destination="@id/forecastFragment" />
-    </fragment>
-
-    <!-- ForecastFragment -->
     <fragment
-        android:id="@+id/forecastFragment"
+        android:id="@+id/pronosticoFragment"
         android:name="com.example.lab4.PronosticoFragment"
-        android:label="Forecast Fragment"
-        tools:layout="@layout/fragment_forecast" />
+        android:label="Clima"
+        tools:layout="@layout/fragment_pronostico" />
+
+    <fragment
+        android:id="@+id/futureFragment"
+        android:name="com.example.lab4.FutureFragment"
+        android:label="Futuro"
+        tools:layout="@layout/fragment_future" />
 </navigation>

@@ -27,10 +27,10 @@ public class AppActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
 
-    @Override
+/*    @Override
     public void onBackPressed() {
         // Al presionar atrás, regresar al MainActivity directamente
         startActivity(new Intent(this, MainActivity.class));
         finish();
-    }
+    }*/
 }

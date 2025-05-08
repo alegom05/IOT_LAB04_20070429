@@ -23,9 +23,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".AppActivity" />
-        <activity android:name=".LocationFragment" />
-        <activity android:name=".PronosticoFragment" />
-        <activity android:name=".FutureFragment" />
+        <activity android:name=".LocationFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".PronosticoFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".FutureFragment"
+            tools:ignore="Instantiatable" />
 
 
     </application>
