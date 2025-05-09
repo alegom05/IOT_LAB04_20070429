@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 public class FutureFragment extends Fragment {
 
     public FutureFragment() {
-        // Constructor vacío obligatorio
     }
 
     @Nullable

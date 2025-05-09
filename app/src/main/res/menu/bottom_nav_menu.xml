@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    El Bottom Navigation Menu asegura poder cambiar entre vistas.
+-->
+
     <item
         android:id="@+id/locationFragment"
         android:icon="@android:drawable/ic_menu_mylocation"

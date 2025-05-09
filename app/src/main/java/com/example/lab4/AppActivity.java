@@ -14,23 +14,15 @@ public class AppActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app); // tu layout con FrameLayout y BottomNav
-
+        setContentView(R.layout.activity_app);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        // Obtener el NavController desde el NavHostFragment
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.fragment_container);
         NavController navController = navHostFragment.getNavController();
 
-        // Enlazar BottomNavigation con el NavController
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
     }
 
-/*    @Override
-    public void onBackPressed() {
-        // Al presionar atrás, regresar al MainActivity directamente
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
-    }*/
+
 }

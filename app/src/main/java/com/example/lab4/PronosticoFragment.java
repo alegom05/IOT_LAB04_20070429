@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 public class PronosticoFragment extends Fragment {
 
     public PronosticoFragment() {
-        // Constructor vacío obligatorio
     }
 
     @Nullable

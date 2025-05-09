@@ -8,6 +8,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
+//El API de Weather, que deje en construcción.
 public interface WeatherApi {
     @GET("v1/search.json")
     Call<List<LocationItem>> searchLocations(

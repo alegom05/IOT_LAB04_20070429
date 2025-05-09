@@ -1,5 +1,6 @@
 package com.example.lab4;
 
+//Beans de Location Item
 public class LocationItem {
     private int id;
     private String name;

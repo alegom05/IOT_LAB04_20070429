@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Título -->
     <TextView
         android:id="@+id/tvTituloLocation"
         android:layout_width="match_parent"
@@ -20,7 +19,6 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <!-- Fila de búsqueda -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +46,6 @@
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
-    <!-- RecyclerView de resultados -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

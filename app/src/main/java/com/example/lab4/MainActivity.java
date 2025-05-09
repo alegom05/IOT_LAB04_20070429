@@ -5,9 +5,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+// El Main Activity controla la vista principal
+// y también verifica que haya internet en la app.
+// Tiene un logo relativo al clima y mi nombre y código.
+// Con Ingresar entra a las 3 vistas que se encuentran
+// con fragments. Solo la primera funciona.
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // layout con el botón Ingresar
+        setContentView(R.layout.activity_main);
 
-        // Verificar la conexión a Internet primero
         if (!NetworkUtils.isNetworkAvailable(this)) {
             showNoConnectionDialog();
-            return; // Importante: evitar continuar con la inicialización normal
+            return;
+        } else {
+            showConnectionConfirmation();
         }
 
-        // Solo si hay conexión, inicializar el botón
         btnIngresar = findViewById(R.id.btnIngresar);
         btnIngresar.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AppActivity.class);
@@ -34,11 +41,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showNoConnectionDialog() {
-        // Crear un Dialog para mostrar el error y dar la opción de ir a los Ajustes
         new AlertDialog.Builder(this)
                 .setTitle("Sin conexión a Internet")
                 .setMessage("No hay conexión a Internet. ¿Deseas ir a los ajustes?")
-                .setCancelable(false)  // No permitir que el usuario cierre el diálogo
+                .setCancelable(false)
                 .setPositiveButton("Configuración", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -55,5 +61,19 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .show();
+    }
+
+    private void showConnectionConfirmation() {
+        new AlertDialog.Builder(this)
+                .setTitle("Conexión a Internet")
+                .setMessage("Hay conexión a Internet. Puede continuar usando la aplicación.")
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .show();
+
     }
 }

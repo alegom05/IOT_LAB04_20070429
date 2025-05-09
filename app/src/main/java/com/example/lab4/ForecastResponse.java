@@ -36,7 +36,6 @@ public class ForecastResponse {
         }
     }
 
-    // Clase para un pronóstico por día
     public static class ForecastDay {
         private String date;
         private Day day;

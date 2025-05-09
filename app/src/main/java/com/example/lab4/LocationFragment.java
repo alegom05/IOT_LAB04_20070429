@@ -23,6 +23,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+// El LocationFragment se encarga de monitorear lo relativo
+// a locación, funciona con el API y permite hacer las búsquedas,
+// por ejemplo con "Miraflores" o "Madrid".
+
 public class LocationFragment extends Fragment {
 
     private EditText etBuscar;

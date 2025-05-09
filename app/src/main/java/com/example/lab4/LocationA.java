@@ -1,20 +1,18 @@
 package com.example.lab4;
 
 public class LocationA {
-    private String idLocation;  // Asegúrate de que esta variable exista
+    private String idLocation;
     private String name;
     private String country;
 
-    // Constructor
     public LocationA(String idLocation, String name, String country) {
         this.idLocation = idLocation;
         this.name = name;
         this.country = country;
     }
 
-    // Métodos getters
     public String getIdLocation() {
-        return idLocation;  // Devuelve el ID de la ubicación
+        return idLocation;
     }
 
     public String getName() {
@@ -25,7 +23,6 @@ public class LocationA {
         return country;
     }
 
-    // Métodos setters
     public void setIdLocation(String idLocation) {
         this.idLocation = idLocation;
     }
